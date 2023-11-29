@@ -1,14 +1,5 @@
-
-
-// userInfo.js
-function getUserInfo() {
-    return {
-      username: 'JohnDoe',
-      level: 5,
-      score: 1000,
-    };
-  }
-  
+// userInfo.test.js
+const getUserInfo = require('./userInfo');
 
 test('getUserInfo returns the correct user information', () => {
   const user = getUserInfo();
@@ -23,5 +14,3 @@ test('getUserInfo returns the correct user information', () => {
   expect(user.level).toBe(5);
   expect(user.score).toBe(1000);
 });
-
-  
